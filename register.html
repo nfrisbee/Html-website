@@ -5,23 +5,23 @@
   </head>
     <h1>Register for Cat Facts!</h1>
       <body>
-        <form>
-          First Name: <input type="text"><br>
-          Last Name: <input type="text"><br>
-          Email: <input type="email" required><br>
-          Password; <input type="password" minlength="5"><br>
-          Birthday: <input type="date"><br>
+        <form method="GET">
+          First Name: <input type="text" name="firstname"><br>
+          Last Name: <input type="text" name="lastname"><br>
+          Email: <input type="email" name="email" required><br>
+          Password; <input type="password" name="password" minlength="5"><br>
+          Birthday: <input type="date" name="birthda"><br>
           Gender:<br>
-           <input type="radio" name="gender">Male<br>
-           <input type="radio" name="gender">Female<br>
-           <input type="radio" name="gender">Other<br>
+           <input type="radio" name="gender" value="Male">Male<br>
+           <input type="radio" name="gender" value="Female">Female<br>
+           <input type="radio" name="gender" value="Other">Other<br>
           Pets: <br>
-           <input type="checkbox">Cat<br>
-           <input type="checkbox">Dog<br>
+           <input type="checkbox" name="cat">Cat<br>
+           <input type="checkbox" name="dog">Dog<br>
           Number of Pets: <br>
-           <select>
-             <option value="3 or less">3 or less</option>
-             <option value="More than 3">More than 3</option>
+           <select name="pets">
+             <option value="3 or less" name="3orless">3 or less</option>
+             <option value="More than 3" name="morethan3">More than 3</option>
            </select>
            <input type="submit" value="Register"/>
            <input type="reset"/>
